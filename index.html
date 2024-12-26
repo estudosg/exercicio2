@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grafo</h1>
+        <div class="section">
+            <label for="vertices">Vértices (Digite separados por vírgula):</label>
+            <input type="text" id="vertices" placeholder="Ex.: A, B, C, D">
+            
+            <label for="edges">Arestas (formato: A-B, Digite separadas por vírgula):</label>
+            <input type="text" id="edges" placeholder="Ex.: A-B, B-C, C-D">
+            
+            <button onclick="createGraph()">Criar Grafo</button>
+        </div>
+
+        <div class="section">
+            <h2>Estrutura do Grafo</h2>
+            <div id="graph"></div>
+        </div>
+
+        <div class="section">
+            <h2>Verificar Adjacência</h2>
+            <label for="vertex1">Vértice 1:</label>
+            <input type="text" id="vertex1" placeholder="Digite o vértice">
+            
+            <label for="vertex2">Vértice 2:</label>
+            <input type="text" id="vertex2" placeholder="Digite o vértice">
+            
+            <button onclick="checkAdjacency()">Verificar</button>
+            <div id="adjacencyResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Grau do Vértice</h2>
+            <label for="vertexDegree">Vértice:</label>
+            <input type="text" id="vertexDegree" placeholder="Digite o vértice">
+            
+            <button onclick="getVertexDegree()">Obter Grau</button>
+            <div id="vertexDegreeResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>Graus Máximo e Mínimo do Grafo</h2>
+            <button onclick="getGraphDegrees()">Obter Graus</button>
+            <div id="graphDegreesResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

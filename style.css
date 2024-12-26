@@ -1,0 +1,80 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #F24B88, #4D2773);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #4F1BBF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #7326A6;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #F24B88;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #BF3BA9;
+}
+
+.section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#graph, #adjacencyResult, #vertexDegreeResult, #graphDegreesResult {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
